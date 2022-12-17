@@ -1,0 +1,86 @@
+.container {
+   background-color: rgb(164, 186, 222);
+    height: 100vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 15px;
+    transition: border 1s;
+    position: relative;
+}
+.border:hover {
+    border: 2px solid rgb(244, 240, 240);
+}
+
+.card {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 15px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+.cardM{
+    background: url("https://gartic.com.br/imgs/mural/ho/holos/frajola.png") center center no-repeat; 
+    background-size: 460px;
+}
+
+.cardM:hover{
+    background: url("https://gartic.com.br/imgs/mural/ho/holos/frajola.png") left center no-repeat; 
+    background-size: 500px;
+}
+
+.card:hover h2{
+    opacity: 3;
+}
+
+.cardM:hover .fa{
+    opacity: 3;
+}
+    
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(241, 238, 238);
+    margin: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fa {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.icons {
+    
+    position: absolute;
+    fill: #fff;
+    color: rgb(244, 240, 240);
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
